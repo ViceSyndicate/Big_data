@@ -1,0 +1,18 @@
+shirt:
+stature = how tall
+weight = weight
+
+Omphalion = waist = right, left, anterior(back), posterior(front)
+Trochanterion = hip
+chestcircumference
+
+armlength
+chestbreadth = bröst bredd
+sittingheight (stool to head)
+slevveinseam = armhåla till vrist
+
+pants:
+buttockcircumference = runt rumpan
+crotchheight = fot till skrev
+hipbreath = höftbredd
+waistcircumference = omkrets vid naveln
