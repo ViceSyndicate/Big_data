@@ -1,4 +1,6 @@
 
+def main():
+    pass
 
 def extract_data():
     unclean = open('male.csv', 'r')
@@ -13,4 +15,4 @@ def extract_data():
 
 
 if __name__ == '__main__':
-    extract_data()
+    main()
