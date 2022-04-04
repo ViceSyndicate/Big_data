@@ -16,3 +16,6 @@ buttockcircumference = runt rumpan
 crotchheight = fot till skrev
 hipbreath = höftbredd
 waistcircumference = omkrets vid naveln
+
+
+shirt length = cervicaleheight - feet to hip
