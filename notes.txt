@@ -19,3 +19,11 @@ waistcircumference = omkrets vid naveln
 
 
 shirt length = cervicaleheight - feet to hip
+
+
+crotchheight = feet to crotch = inseam
+waistheightomphalion = feet to bellybutton
+waistdepth = bkac to front of belly
+iliocristaleheight = feet to waist
+footlength
+footbreadth
