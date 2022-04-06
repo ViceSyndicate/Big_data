@@ -8,7 +8,7 @@ class Size:
     xxxl = "XXXLARGE"
 
 
-class Person:
+class Male_Shirt:
     def __init__(self, weight, height, *args):
         self.weight = weight
         self.height = height

@@ -3,6 +3,8 @@ import math
 from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 import models.data as models
+import trim_data
+
 
 def get_df():
     df = pd.read_csv('C:\School\BigData\Big_Data\male.csv', usecols=['stature', 'weightkg'])
@@ -19,7 +21,7 @@ def set_sizes_and_deltas(df):
     for row in df.itertuples():
         height = row[1]
         weight = row[2]
-        person = models.Person(weight, height)
+        person = models.Male_Shirt(weight, height)
         people.append(person)
 
     everyones_size = []
@@ -51,7 +53,7 @@ def calculate_users_shirt(df, cm, kg):
     for row in df.itertuples():
         length = row[1]
         weight = row[2]
-        person = models.Person(weight, length)
+        person = models.Male_Shirt(weight, length)
         weight_and_length.append(person)
 
     kn_classifier = KNeighborsClassifier(n_neighbors=3)
@@ -77,6 +79,7 @@ def calculate_users_shirt(df, cm, kg):
 
 
 def main():
+    trim_data.trim_data()
     df = get_df()
     df = set_sizes_and_deltas(df)
 

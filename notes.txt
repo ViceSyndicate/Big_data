@@ -25,5 +25,7 @@ crotchheight = feet to crotch = inseam
 waistheightomphalion = feet to bellybutton
 waistdepth = bkac to front of belly
 iliocristaleheight = feet to waist
+
+crotchheight
 footlength
 footbreadth
