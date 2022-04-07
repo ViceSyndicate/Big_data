@@ -26,6 +26,37 @@ waistheightomphalion = feet to bellybutton
 waistdepth = bkac to front of belly
 iliocristaleheight = feet to waist
 
-crotchheight
-footlength
-footbreadth
+#from zalando.com
+#Jeans M
+EU	INT	MIDJEMÅTT	HÖFTMÅTT	INNERBENSLÄNGD
+42	XS	66      	87	        80.5
+44	S	70      	90	        81
+44	S	72      	91.5	    81.25
+46	S/M	74	        93	        81.5
+46	S/M	76	        94.5	    81.75
+48	M	78	        96	        82
+48	M	80.5	    97.5	    82.25
+50	L	83	        99  	    82.5
+50	L	85.5	    100.5	    82.75
+52	XL	90.5	    103.5	    83.25
+54	XL	95.5	    106.5	    83.75
+56	XXL	102	        111	        84.5
+
+#Jeans F
+EU	INT	MIDJEMÅTT	HÖFTMÅTT	INNERBENSLÄNGD
+30	XS	58	        78	        78.3
+32	XS	61	        82	        78.25
+32	XS	63	        85      	78.2
+34	S	66	        89      	78.2
+34	S	69	        93	        78.2
+36	S	71      	95      	78.15
+36	M	73      	97      	78.1
+38	M	76      	100	        78
+38	M	78.5	    101.5	    77.95
+40	L	81	        103	        77.9
+40	L	83.5	    104.5	    77.85
+42	L	86	        106     	77.8
+44	XL	91	        109	        77.7
+46	XXL	96.5	    114	        77.5
+48	XXL	101	        117     	77.4
+50	3XL	106.25	    121.5	    77.2
