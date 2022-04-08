@@ -5,6 +5,8 @@ import numpy as np
 import models.data as models
 import trim_data
 
+# Predicts Male shirt size with kg & cm using sklearns K_nearesneighbour algorithm
+
 
 def get_df():
     df = pd.read_csv('C:\School\BigData\Big_Data\male.csv', usecols=['stature', 'weightkg'])
@@ -47,7 +49,7 @@ def calculate_deltas(df, people):
     return df
 
 
-def calculate_users_shirt(df, cm, kg):
+def calculate_users_shirt(df, cm, kg, k):
     weight_and_length = []
 
     for row in df.itertuples():
@@ -56,7 +58,7 @@ def calculate_users_shirt(df, cm, kg):
         person = models.Male_Shirt(weight, length)
         weight_and_length.append(person)
 
-    kn_classifier = KNeighborsClassifier(n_neighbors=3)
+    kn_classifier = KNeighborsClassifier(n_neighbors=int(k))
 
     values = []
     sizes = []
@@ -75,18 +77,19 @@ def calculate_users_shirt(df, cm, kg):
     probability = kn_classifier.predict_proba(user_weight)
     score = kn_classifier.score
 
-    print("I think :" + str(prediction_size) + " Would fit you.")
+    print("Reccomended Size: " + str(prediction_size))
 
 
 def main():
-    trim_data.trim_data()
+    #trim_data.trim_data()
     df = get_df()
     df = set_sizes_and_deltas(df)
 
     kg = input('Enter weight in Kg: ')
     cm = input('Enter length in Cm: ')
+    k = input('How many do you want to compare with?: ')
 
-    calculate_users_shirt(df, kg, cm)
+    calculate_users_shirt(df, kg, cm, k)
 
 
 if __name__ == '__main__':
