@@ -17,18 +17,38 @@ class Male_Shirt:
         #self.waistbreadth = args.waistbreadth
         #self.hipbreadth = args.hipbreadth
 
-        self.size = Size.xs if (height <= 169) & (weight <= 55) else Size.s if (height <= 178) & (weight <= 65) else Size.m if (height <= 182) & (weight <= 75) else Size.l if (height <= 186) & (weight <= 85) else Size.xl if (height <= 190) & (weight <= 90) else Size.xxl if (height <= 194) & (weight <= 95) else Size.xxxl
+        self.size = Size.xs if (height <= 169) & (weight <= 55) \
+            else Size.s if (height <= 178) & (weight <= 65) \
+            else Size.m if (height <= 182) & (weight <= 75) \
+            else Size.l if (height <= 186) & (weight <= 85) \
+            else Size.xl if (height <= 190) & (weight <= 90) \
+            else Size.xxl if (height <= 194) & (weight <= 95) \
+            else Size.xxxl
 
 #Replace inseam with waistwidth.
 class Female_Pants:
-    def __init__(self, hipwidth, waistbreadth):
-        self.hipwidth = hipwidth
-        self.waistbreadth = waistbreadth
+    def __init__(self, hipcircumference, waistcircumference):
+        self.hipwidth = hipcircumference
+        self.waistbreadth = waistcircumference
 
-        self.size = Size.xs if (hipwidth <= 85) & (waistbreadth <= 63)\
-            else Size.s if (hipwidth <= 95) & (waistbreadth <= 71)\
-            else Size.m if (hipwidth <= 101.5) & (waistbreadth <= 78.5)\
-            else Size.l if (hipwidth <= 106) & (waistbreadth <= 86)\
-            else Size.xl if (hipwidth <= 109) & (waistbreadth <= 91)\
-            else Size.xxl if (hipwidth <= 117) & (waistbreadth <= 101)\
+        self.size = Size.xs if (hipcircumference <= 85) & (waistcircumference <= 63)\
+            else Size.s if (hipcircumference <= 95) & (waistcircumference <= 71)\
+            else Size.m if (hipcircumference <= 101.5) & (waistcircumference <= 78.5)\
+            else Size.l if (hipcircumference <= 106) & (waistcircumference <= 86)\
+            else Size.xl if (hipcircumference <= 109) & (waistcircumference <= 91)\
+            else Size.xxl if (hipcircumference <= 117) & (waistcircumference <= 101)\
+            else Size.xxxl
+
+
+class Male_Pants:
+    def __init__(self, hipcircumference, waistcircumference):
+        self.hipwidth = hipcircumference
+        self.waistbreadth = waistcircumference
+
+        self.size = Size.xs if (hipcircumference <= 87) & (waistcircumference <= 66)\
+            else Size.s if (hipcircumference <= 92) & (waistcircumference <= 74)\
+            else Size.m if (hipcircumference <= 96) & (waistcircumference <= 80.5)\
+            else Size.l if (hipcircumference <= 100.5) & (waistcircumference <= 85.5)\
+            else Size.xl if (hipcircumference <= 106.5) & (waistcircumference <= 94)\
+            else Size.xxl if (hipcircumference <= 111) & (waistcircumference <= 102)\
             else Size.xxxl
