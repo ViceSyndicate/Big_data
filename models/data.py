@@ -25,7 +25,7 @@ class Male_Shirt:
             else Size.xxl if (height <= 194) & (weight <= 95) \
             else Size.xxxl
 
-#Replace inseam with waistwidth.
+
 class Female_Pants:
     def __init__(self, hipcircumference, waistcircumference):
         self.hipwidth = hipcircumference
