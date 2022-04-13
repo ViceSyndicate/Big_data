@@ -17,7 +17,8 @@ class Male_Shirt:
         #self.waistbreadth = args.waistbreadth
         #self.hipbreadth = args.hipbreadth
 
-        self.size = Size.xs if (height <= 169) & (weight <= 55) \
+        self.size = \
+            Size.xs if (height <= 169) & (weight <= 55) \
             else Size.s if (height <= 178) & (weight <= 65) \
             else Size.m if (height <= 182) & (weight <= 75) \
             else Size.l if (height <= 186) & (weight <= 85) \

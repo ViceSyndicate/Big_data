@@ -1,6 +1,7 @@
 # this script guesses the shirt size of males using my own K_nearestneighbours algorithm
 import main as mainfuncs
 import models.data
+import math
 
 
 def calculate_neighbours(df, my_weight, my_length):
@@ -40,6 +41,7 @@ def calculate_neighbours(df, my_weight, my_length):
         weight_diff = weight_diff * weight_diff
 
         delta = height_diff + weight_diff
+        delta = math.sqrt(delta)
         deltas.append(delta)
 
     df['deltapoint'] = deltas
