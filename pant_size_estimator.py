@@ -1,5 +1,6 @@
 import pandas as pd
 import models.data as models
+import math
 
 def get_df(gender):
     if gender == 'm':
@@ -51,7 +52,7 @@ def set_sizes_and_distances(df, user_waist, user_hip):
         hip_diff = hip_diff * hip_diff
 
         delta = waist_diff + hip_diff
-        # delta = math.sqrt(delta)
+        delta = math.sqrt(delta)
         deltas.append(delta)
 
     df['deltapoint'] = deltas
